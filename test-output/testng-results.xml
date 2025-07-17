@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="28" passed="15" failed="13" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-15T22:53:33 BST" name="ECommerceSuite" finished-at="2025-07-15T22:55:55 BST" duration-ms="142037">
+    <groups>
+      <group name="ui">
+        <method signature="SignUpTest.validSignUp()[pri:1, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" name="validSignUp" class="com.sudha.ecommerce.tests.SignUpTest"/>
+        <method signature="LoginPageTest.verifyLoginWithEmptyFields()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" name="verifyLoginWithEmptyFields" class="com.sudha.ecommerce.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyLoginWithInCorrectUserNameAndPassword()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" name="verifyLoginWithInCorrectUserNameAndPassword" class="com.sudha.ecommerce.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyLoginWithValidCredentials()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" name="verifyLoginWithValidCredentials" class="com.sudha.ecommerce.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyPasswordFieldIsMasked(java.lang.String,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" name="verifyPasswordFieldIsMasked" class="com.sudha.ecommerce.tests.LoginPageTest"/>
+        <method signature="ResponsiveDesignTest.testHorizontalScrollingOnIphone15Pro()[pri:0, instance:com.sudha.ecommerce.tests.ResponsiveDesignTest@71238fc2]" name="testHorizontalScrollingOnIphone15Pro" class="com.sudha.ecommerce.tests.ResponsiveDesignTest"/>
+        <method signature="ResponsiveDesignTest.testHorizontalScrollingOnIphone8()[pri:0, instance:com.sudha.ecommerce.tests.ResponsiveDesignTest@71238fc2]" name="testHorizontalScrollingOnIphone8" class="com.sudha.ecommerce.tests.ResponsiveDesignTest"/>
+        <method signature="CartTest.addProductToCart()[pri:1, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" name="addProductToCart" class="com.sudha.ecommerce.tests.CartTest"/>
+        <method signature="CartTest.viewCartWithAddedProducts()[pri:2, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" name="viewCartWithAddedProducts" class="com.sudha.ecommerce.tests.CartTest"/>
+        <method signature="CartTest.removeProductFromTheCart()[pri:3, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" name="removeProductFromTheCart" class="com.sudha.ecommerce.tests.CartTest"/>
+        <method signature="CartTest.addMultipleProductsToCart()[pri:4, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" name="addMultipleProductsToCart" class="com.sudha.ecommerce.tests.CartTest"/>
+        <method signature="OrderTest.placeOrderWithValidDetails()[pri:1, instance:com.sudha.ecommerce.tests.OrderTest@662b4c69]" name="placeOrderWithValidDetails" class="com.sudha.ecommerce.tests.OrderTest"/>
+        <method signature="OrderTest.placeOrderWithEmptyForm()[pri:2, instance:com.sudha.ecommerce.tests.OrderTest@662b4c69]" name="placeOrderWithEmptyForm" class="com.sudha.ecommerce.tests.OrderTest"/>
+        <method signature="SignUpTest.inValidSignUp()[pri:2, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" name="inValidSignUp" class="com.sudha.ecommerce.tests.SignUpTest"/>
+        <method signature="SignUpTest.blankSignUp()[pri:3, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" name="blankSignUp" class="com.sudha.ecommerce.tests.SignUpTest"/>
+      </group> <!-- ui -->
+    </groups>
+    <test started-at="2025-07-15T22:53:33 BST" name="Chrome Tests" finished-at="2025-07-15T22:55:55 BST" duration-ms="142037">
+      <class name="com.sudha.ecommerce.tests.ResponsiveDesignTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.ResponsiveDesignTest@71238fc2]" started-at="2025-07-15T22:54:47 BST" name="setUp" finished-at="2025-07-15T22:54:48 BST" duration-ms="1629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ResponsiveDesignTest.testHorizontalScrollingOnIphone15Pro()[pri:0, instance:com.sudha.ecommerce.tests.ResponsiveDesignTest@71238fc2] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testHorizontalScrollingOnIphone15Pro()[pri:0, instance:com.sudha.ecommerce.tests.ResponsiveDesignTest@71238fc2]" started-at="2025-07-15T22:54:48 BST" name="testHorizontalScrollingOnIphone15Pro" description="Test horizontal scrolling - iPhone15 Pro" finished-at="2025-07-15T22:54:50 BST" depends-on-methods="com.sudha.ecommerce.tests.LoginPageTest.verifyLoginWithValidCredentials" duration-ms="1494" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.sudha.ecommerce.tests.HomePageTest.testNavBarAfterLogin()" because "this.homePageTest" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.sudha.ecommerce.tests.HomePageTest.testNavBarAfterLogin()" because "this.homePageTest" is null
+at com.sudha.ecommerce.tests.ResponsiveDesignTest.validateHorizontalScrolling(ResponsiveDesignTest.java:38)
+at com.sudha.ecommerce.tests.ResponsiveDesignTest.testHorizontalScrollingOnIphone15Pro(ResponsiveDesignTest.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHorizontalScrollingOnIphone15Pro -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.ResponsiveDesignTest@71238fc2]" started-at="2025-07-15T22:54:50 BST" name="tearDown" finished-at="2025-07-15T22:54:50 BST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.ResponsiveDesignTest@71238fc2]" started-at="2025-07-15T22:54:50 BST" name="setUp" finished-at="2025-07-15T22:54:52 BST" duration-ms="1663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ResponsiveDesignTest.testHorizontalScrollingOnIphone8()[pri:0, instance:com.sudha.ecommerce.tests.ResponsiveDesignTest@71238fc2] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testHorizontalScrollingOnIphone8()[pri:0, instance:com.sudha.ecommerce.tests.ResponsiveDesignTest@71238fc2]" started-at="2025-07-15T22:54:52 BST" name="testHorizontalScrollingOnIphone8" description="Test horizontal scrolling - iPhone8" finished-at="2025-07-15T22:54:53 BST" depends-on-methods="com.sudha.ecommerce.tests.LoginPageTest.verifyLoginWithValidCredentials" duration-ms="1611" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.sudha.ecommerce.tests.HomePageTest.testNavBarAfterLogin()" because "this.homePageTest" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.sudha.ecommerce.tests.HomePageTest.testNavBarAfterLogin()" because "this.homePageTest" is null
+at com.sudha.ecommerce.tests.ResponsiveDesignTest.validateHorizontalScrolling(ResponsiveDesignTest.java:38)
+at com.sudha.ecommerce.tests.ResponsiveDesignTest.testHorizontalScrollingOnIphone8(ResponsiveDesignTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHorizontalScrollingOnIphone8 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.ResponsiveDesignTest@71238fc2]" started-at="2025-07-15T22:54:53 BST" name="tearDown" finished-at="2025-07-15T22:54:54 BST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sudha.ecommerce.tests.ResponsiveDesignTest -->
+      <class name="com.sudha.ecommerce.tests.SignUpTest">
+        <test-method is-config="true" signature="cleanReports()[pri:0, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" started-at="2025-07-15T22:53:33 BST" name="cleanReports" finished-at="2025-07-15T22:53:33 BST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanReports -->
+        <test-method is-config="true" signature="beforeEachBrowser()[pri:0, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" started-at="2025-07-15T22:54:26 BST" name="beforeEachBrowser" finished-at="2025-07-15T22:54:26 BST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachBrowser -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" started-at="2025-07-15T22:54:26 BST" name="setUp" finished-at="2025-07-15T22:54:27 BST" duration-ms="1696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=SignUpTest.validSignUp()[pri:1, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validSignUp()[pri:1, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" started-at="2025-07-15T22:54:27 BST" name="validSignUp" description="Verify user sign-up with unique credentials" finished-at="2025-07-15T22:54:29 BST" duration-ms="1636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSignUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" started-at="2025-07-15T22:54:29 BST" name="tearDown" finished-at="2025-07-15T22:54:29 BST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" started-at="2025-07-15T22:55:06 BST" name="setUp" finished-at="2025-07-15T22:55:08 BST" duration-ms="1510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=SignUpTest.inValidSignUp()[pri:2, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="inValidSignUp()[pri:2, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" started-at="2025-07-15T22:55:08 BST" name="inValidSignUp" description="Verify sign-up with existing username" finished-at="2025-07-15T22:55:09 BST" duration-ms="1592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValidSignUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" started-at="2025-07-15T22:55:10 BST" name="tearDown" finished-at="2025-07-15T22:55:10 BST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" started-at="2025-07-15T22:55:14 BST" name="setUp" finished-at="2025-07-15T22:55:15 BST" duration-ms="1178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=SignUpTest.blankSignUp()[pri:3, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="blankSignUp()[pri:3, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" started-at="2025-07-15T22:55:15 BST" name="blankSignUp" description="Verify sign-up with empty fields" finished-at="2025-07-15T22:55:17 BST" duration-ms="1640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankSignUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.SignUpTest@33990a0c]" started-at="2025-07-15T22:55:17 BST" name="tearDown" finished-at="2025-07-15T22:55:17 BST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sudha.ecommerce.tests.SignUpTest -->
+      <class name="com.sudha.ecommerce.tests.CartTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" started-at="2025-07-15T22:55:00 BST" name="setUp" finished-at="2025-07-15T22:55:02 BST" duration-ms="1843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CartTest.addProductToCart()[pri:1, instance:com.sudha.ecommerce.tests.CartTest@fba92d3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addProductToCart()[pri:1, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" started-at="2025-07-15T22:55:02 BST" name="addProductToCart" description="Add product to cart" finished-at="2025-07-15T22:55:06 BST" depends-on-methods="com.sudha.ecommerce.tests.LoginPageTest.verifyLoginWithValidCredentials" duration-ms="4401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" started-at="2025-07-15T22:55:06 BST" name="tearDown" finished-at="2025-07-15T22:55:06 BST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" started-at="2025-07-15T22:55:10 BST" name="setUp" finished-at="2025-07-15T22:55:12 BST" duration-ms="1789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CartTest.viewCartWithAddedProducts()[pri:2, instance:com.sudha.ecommerce.tests.CartTest@fba92d3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="viewCartWithAddedProducts()[pri:2, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" started-at="2025-07-15T22:55:12 BST" name="viewCartWithAddedProducts" description="View cart with added products" finished-at="2025-07-15T22:55:14 BST" depends-on-methods="com.sudha.ecommerce.tests.LoginPageTest.verifyLoginWithValidCredentials" duration-ms="1846" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c4679bb4ffdfc1e0f16e648cd802b63f, clickElement {id=f.BE66808DB9B164BCBDE0EF61697C8DCD.d.5B6013761B5B8A47ABF584754AE4BD85.e.98}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55894/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c4679bb4ffdfc1e0f16e648cd802b63f)] -> id: cartur]
+Session ID: c4679bb4ffdfc1e0f16e648cd802b63f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c4679bb4ffdfc1e0f16e648cd802b63f, clickElement {id=f.BE66808DB9B164BCBDE0EF61697C8DCD.d.5B6013761B5B8A47ABF584754AE4BD85.e.98}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55894/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c4679bb4ffdfc1e0f16e648cd802b63f)] -> id: cartur]
+Session ID: c4679bb4ffdfc1e0f16e648cd802b63f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.sudha.ecommerce.pages.HomePage.clickCartLink(HomePage.java:96)
+at com.sudha.ecommerce.tests.CartTest.viewCartWithAddedProducts(CartTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCartWithAddedProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" started-at="2025-07-15T22:55:14 BST" name="tearDown" finished-at="2025-07-15T22:55:14 BST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" started-at="2025-07-15T22:55:17 BST" name="setUp" finished-at="2025-07-15T22:55:19 BST" duration-ms="1623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CartTest.removeProductFromTheCart()[pri:3, instance:com.sudha.ecommerce.tests.CartTest@fba92d3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="removeProductFromTheCart()[pri:3, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" started-at="2025-07-15T22:55:19 BST" name="removeProductFromTheCart" description="Remove product from cart" finished-at="2025-07-15T22:55:21 BST" depends-on-methods="com.sudha.ecommerce.tests.LoginPageTest.verifyLoginWithValidCredentials" duration-ms="1708" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a32bb4d41031947929052c131de25f0, clickElement {id=f.5FA2C34BF81F8781AD9044EF58D90A11.d.DA087847D579207C4B4E7B8EB38516DA.e.99}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55941/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3a32bb4d41031947929052c131de25f0)] -> id: cartur]
+Session ID: 3a32bb4d41031947929052c131de25f0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a32bb4d41031947929052c131de25f0, clickElement {id=f.5FA2C34BF81F8781AD9044EF58D90A11.d.DA087847D579207C4B4E7B8EB38516DA.e.99}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55941/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3a32bb4d41031947929052c131de25f0)] -> id: cartur]
+Session ID: 3a32bb4d41031947929052c131de25f0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.sudha.ecommerce.pages.HomePage.clickCartLink(HomePage.java:96)
+at com.sudha.ecommerce.tests.CartTest.removeProductFromTheCart(CartTest.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeProductFromTheCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" started-at="2025-07-15T22:55:21 BST" name="tearDown" finished-at="2025-07-15T22:55:21 BST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" started-at="2025-07-15T22:55:21 BST" name="setUp" finished-at="2025-07-15T22:55:23 BST" duration-ms="1574" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CartTest.addMultipleProductsToCart()[pri:4, instance:com.sudha.ecommerce.tests.CartTest@fba92d3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addMultipleProductsToCart()[pri:4, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" started-at="2025-07-15T22:55:23 BST" name="addMultipleProductsToCart" description="Add Multiple products to cart" finished-at="2025-07-15T22:55:35 BST" depends-on-methods="com.sudha.ecommerce.tests.LoginPageTest.verifyLoginWithValidCredentials" duration-ms="11920" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.className: name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55964}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55964/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: edce6b5b7b05f7cf14efd50c9e4ce252]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55964}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55964/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: edce6b5b7b05f7cf14efd50c9e4ce252
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.sudha.ecommerce.pages.HomePage.addRandomProductsToCart(HomePage.java:63)
+at com.sudha.ecommerce.tests.CartTest.addMultipleProductsToCart(CartTest.java:63)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleProductsToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.CartTest@fba92d3]" started-at="2025-07-15T22:55:35 BST" name="tearDown" finished-at="2025-07-15T22:55:35 BST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sudha.ecommerce.tests.CartTest -->
+      <class name="com.sudha.ecommerce.tests.ProductBrowsingTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:53:44 BST" name="setUp" finished-at="2025-07-15T22:53:45 BST" duration-ms="1227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ProductBrowsingTest.testBrowseCategoryLaptops()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:53:45 BST" name="initPage" finished-at="2025-07-15T22:53:45 BST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testBrowseCategoryLaptops()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:53:45 BST" name="testBrowseCategoryLaptops" description="Test Browse product categories Laptops" finished-at="2025-07-15T22:53:47 BST" duration-ms="1590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowseCategoryLaptops -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:53:47 BST" name="tearDown" finished-at="2025-07-15T22:53:47 BST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:53:47 BST" name="setUp" finished-at="2025-07-15T22:53:50 BST" duration-ms="2201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ProductBrowsingTest.testBrowseCategoryMonitors()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:53:50 BST" name="initPage" finished-at="2025-07-15T22:53:50 BST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testBrowseCategoryMonitors()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:53:50 BST" name="testBrowseCategoryMonitors" description="Test Browse product categories Monitors" finished-at="2025-07-15T22:53:50 BST" duration-ms="857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowseCategoryMonitors -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:53:51 BST" name="tearDown" finished-at="2025-07-15T22:53:51 BST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:53:51 BST" name="setUp" finished-at="2025-07-15T22:53:53 BST" duration-ms="1844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ProductBrowsingTest.testBrowseCategoryPhones()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:53:53 BST" name="initPage" finished-at="2025-07-15T22:53:53 BST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testBrowseCategoryPhones()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:53:53 BST" name="testBrowseCategoryPhones" description="Test Browse product categories Phones" finished-at="2025-07-15T22:53:54 BST" duration-ms="913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowseCategoryPhones -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:53:54 BST" name="tearDown" finished-at="2025-07-15T22:53:54 BST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:54:17 BST" name="setUp" finished-at="2025-07-15T22:54:18 BST" duration-ms="1805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ProductBrowsingTest.testNavigateUsingNavbarLinks()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:54:18 BST" name="initPage" finished-at="2025-07-15T22:54:18 BST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testNavigateUsingNavbarLinks()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:54:18 BST" name="testNavigateUsingNavbarLinks" description="Test Navigate using Navbar links" finished-at="2025-07-15T22:54:18 BST" duration-ms="38" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Home']"}
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [980fe499aad83e2e92f65f5d276a9dcb, findElement {using=xpath, value=//a[text()='Home']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55529/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 980fe499aad83e2e92f65f5d276a9dcb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Home']"}
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [980fe499aad83e2e92f65f5d276a9dcb, findElement {using=xpath, value=//a[text()='Home']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55529/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 980fe499aad83e2e92f65f5d276a9dcb
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at com.sudha.ecommerce.pages.ProductBrowsingPage.clickHomeLink(ProductBrowsingPage.java:97)
+at com.sudha.ecommerce.tests.ProductBrowsingTest.testNavigateUsingNavbarLinks(ProductBrowsingTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateUsingNavbarLinks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:54:19 BST" name="tearDown" finished-at="2025-07-15T22:54:19 BST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:54:19 BST" name="setUp" finished-at="2025-07-15T22:54:20 BST" duration-ms="1134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ProductBrowsingTest.testVerifyHomeNavigation()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:54:20 BST" name="initPage" finished-at="2025-07-15T22:54:20 BST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testVerifyHomeNavigation()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:54:20 BST" name="testVerifyHomeNavigation" description="Verify Home Navigation" finished-at="2025-07-15T22:54:21 BST" duration-ms="1264" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Home']"}
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f5102704c9e988a1042b6ace16ff922, findElement {using=xpath, value=//a[text()='Home']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55551}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55551/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f5102704c9e988a1042b6ace16ff922]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Home']"}
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f5102704c9e988a1042b6ace16ff922, findElement {using=xpath, value=//a[text()='Home']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55551}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55551/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f5102704c9e988a1042b6ace16ff922
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at com.sudha.ecommerce.pages.ProductBrowsingPage.clickHomeLink(ProductBrowsingPage.java:97)
+at com.sudha.ecommerce.tests.ProductBrowsingTest.testVerifyHomeNavigation(ProductBrowsingTest.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyHomeNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:54:21 BST" name="tearDown" finished-at="2025-07-15T22:54:22 BST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:54:22 BST" name="setUp" finished-at="2025-07-15T22:54:23 BST" duration-ms="1424" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ProductBrowsingTest.testViewProductDetails()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:54:23 BST" name="initPage" finished-at="2025-07-15T22:54:23 BST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testViewProductDetails()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:54:23 BST" name="testViewProductDetails" finished-at="2025-07-15T22:54:25 BST" duration-ms="2120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewProductDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.ProductBrowsingTest@fa49800]" started-at="2025-07-15T22:54:25 BST" name="tearDown" finished-at="2025-07-15T22:54:26 BST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sudha.ecommerce.tests.ProductBrowsingTest -->
+      <class name="com.sudha.ecommerce.tests.HomePageTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749]" started-at="2025-07-15T22:53:33 BST" name="setUp" finished-at="2025-07-15T22:53:36 BST" duration-ms="2952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.testAddToCartAndValidateInCart()[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddToCartAndValidateInCart()[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749]" started-at="2025-07-15T22:53:36 BST" name="testAddToCartAndValidateInCart" finished-at="2025-07-15T22:53:44 BST" duration-ms="7857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCartAndValidateInCart -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749]" started-at="2025-07-15T22:53:54 BST" name="setUp" finished-at="2025-07-15T22:53:55 BST" duration-ms="1188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.testContactModalUI()[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testContactModalUI()[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749]" started-at="2025-07-15T22:53:55 BST" name="testContactModalUI" finished-at="2025-07-15T22:53:58 BST" duration-ms="3097" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b75b6366edad60f50cddf1a520460f3, clickElement {id=f.19C969CF2EFBB981BF6DCC85D156E4F2.d.FD7A9C07F4000A19DB7CB458B447FA81.e.99}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55451/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4b75b6366edad60f50cddf1a520460f3)] -> xpath: //a[text()='Contact']]
+Session ID: 4b75b6366edad60f50cddf1a520460f3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b75b6366edad60f50cddf1a520460f3, clickElement {id=f.19C969CF2EFBB981BF6DCC85D156E4F2.d.FD7A9C07F4000A19DB7CB458B447FA81.e.99}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55451}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55451/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4b75b6366edad60f50cddf1a520460f3)] -> xpath: //a[text()='Contact']]
+Session ID: 4b75b6366edad60f50cddf1a520460f3
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.sudha.ecommerce.pages.HomePage.openContactModal(HomePage.java:133)
+at com.sudha.ecommerce.tests.HomePageTest.testContactModalUI(HomePageTest.java:60)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactModalUI -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749]" started-at="2025-07-15T22:53:59 BST" name="setUp" finished-at="2025-07-15T22:54:00 BST" duration-ms="1822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.testDeleteProductFromCart()[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteProductFromCart()[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749]" started-at="2025-07-15T22:54:00 BST" name="testDeleteProductFromCart" finished-at="2025-07-15T22:54:12 BST" duration-ms="11880" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.className: name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55477}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55477/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc806a0fbc6d6da479b3afa4e7b046e5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55477}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55477/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc806a0fbc6d6da479b3afa4e7b046e5
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.sudha.ecommerce.pages.HomePage.addRandomProductsToCart(HomePage.java:63)
+at com.sudha.ecommerce.tests.HomePageTest.testDeleteProductFromCart(HomePageTest.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteProductFromCart -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749]" started-at="2025-07-15T22:54:13 BST" name="setUp" finished-at="2025-07-15T22:54:15 BST" duration-ms="2143" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.testNavBarAfterLogin()[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavBarAfterLogin()[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749]" started-at="2025-07-15T22:54:15 BST" name="testNavBarAfterLogin" finished-at="2025-07-15T22:54:16 BST" duration-ms="1185" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Lists differ at element [4]: Log out != Log in expected [Log out] but found [Log in]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Lists differ at element [4]: Log out != Log in expected [Log out] but found [Log in]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:1644)
+at org.testng.Assert.assertEquals(Assert.java:1606)
+at com.sudha.ecommerce.tests.HomePageTest.testNavBarAfterLogin(HomePageTest.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavBarAfterLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.HomePageTest@67c33749]" started-at="2025-07-15T22:54:16 BST" name="tearDown" finished-at="2025-07-15T22:54:16 BST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sudha.ecommerce.tests.HomePageTest -->
+      <class name="com.sudha.ecommerce.tests.OrderTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.OrderTest@662b4c69]" started-at="2025-07-15T22:55:35 BST" name="setUp" finished-at="2025-07-15T22:55:37 BST" duration-ms="1941" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=OrderTest.placeOrderWithValidDetails()[pri:1, instance:com.sudha.ecommerce.tests.OrderTest@662b4c69] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="placeOrderWithValidDetails()[pri:1, instance:com.sudha.ecommerce.tests.OrderTest@662b4c69]" started-at="2025-07-15T22:55:37 BST" name="placeOrderWithValidDetails" description="Place order with valid details" finished-at="2025-07-15T22:55:49 BST" depends-on-methods="com.sudha.ecommerce.tests.CartTest.addMultipleProductsToCart" duration-ms="11929" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.className: name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55999}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55999/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81a666b6046d6a82bf6c8fa9fbdceb68]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55999}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55999/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81a666b6046d6a82bf6c8fa9fbdceb68
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.sudha.ecommerce.pages.HomePage.addRandomProductsToCart(HomePage.java:63)
+at com.sudha.ecommerce.tests.OrderTest.placeOrderWithValidDetails(OrderTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrderWithValidDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.OrderTest@662b4c69]" started-at="2025-07-15T22:55:50 BST" name="tearDown" finished-at="2025-07-15T22:55:50 BST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.OrderTest@662b4c69]" started-at="2025-07-15T22:55:50 BST" name="setUp" finished-at="2025-07-15T22:55:51 BST" duration-ms="1210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=OrderTest.placeOrderWithEmptyForm()[pri:2, instance:com.sudha.ecommerce.tests.OrderTest@662b4c69] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="placeOrderWithEmptyForm()[pri:2, instance:com.sudha.ecommerce.tests.OrderTest@662b4c69]" started-at="2025-07-15T22:55:51 BST" name="placeOrderWithEmptyForm" description="Place order with empty form" finished-at="2025-07-15T22:55:54 BST" depends-on-methods="com.sudha.ecommerce.tests.CartTest.addMultipleProductsToCart" duration-ms="2934" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a847d17dffc305b64459c59fc15288b, clickElement {id=f.BD3283F7E2D0F32A92BC371BFD623DA1.d.9B8EB51A3933EEB6C49FD495016EE70D.e.130}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56038}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56038/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8a847d17dffc305b64459c59fc15288b)] -> id: cartur]
+Session ID: 8a847d17dffc305b64459c59fc15288b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a847d17dffc305b64459c59fc15288b, clickElement {id=f.BD3283F7E2D0F32A92BC371BFD623DA1.d.9B8EB51A3933EEB6C49FD495016EE70D.e.130}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\sures\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56038}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56038/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8a847d17dffc305b64459c59fc15288b)] -> id: cartur]
+Session ID: 8a847d17dffc305b64459c59fc15288b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.sudha.ecommerce.pages.HomePage.clickCartLink(HomePage.java:96)
+at com.sudha.ecommerce.tests.OrderTest.placeOrderWithEmptyForm(OrderTest.java:81)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrderWithEmptyForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.OrderTest@662b4c69]" started-at="2025-07-15T22:55:54 BST" name="tearDown" finished-at="2025-07-15T22:55:55 BST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sudha.ecommerce.tests.OrderTest -->
+      <class name="com.sudha.ecommerce.tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:30 BST" name="setUp" finished-at="2025-07-15T22:54:31 BST" duration-ms="1721" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginPageTest.testLoginFormButtonsAreVisible()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:31 BST" name="setUp" finished-at="2025-07-15T22:54:31 BST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginFormButtonsAreVisible()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:31 BST" name="testLoginFormButtonsAreVisible" finished-at="2025-07-15T22:54:31 BST" depends-on-methods="com.sudha.ecommerce.tests.SignUpTest.validSignUp" duration-ms="187" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login button should be visible expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login button should be visible expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.sudha.ecommerce.tests.LoginPageTest.testLoginFormButtonsAreVisible(LoginPageTest.java:88)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFormButtonsAreVisible -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:32 BST" name="setUp" finished-at="2025-07-15T22:54:34 BST" duration-ms="2196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginPageTest.testSuccessfulLogin()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:34 BST" name="setUp" finished-at="2025-07-15T22:54:34 BST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:34 BST" name="testSuccessfulLogin" finished-at="2025-07-15T22:54:36 BST" depends-on-methods="com.sudha.ecommerce.tests.SignUpTest.validSignUp" duration-ms="2329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:36 BST" name="setUp" finished-at="2025-07-15T22:54:39 BST" duration-ms="2521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginPageTest.verifyLoginWithEmptyFields()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:39 BST" name="setUp" finished-at="2025-07-15T22:54:39 BST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithEmptyFields()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:39 BST" name="verifyLoginWithEmptyFields" description="Verify login with empty fields" finished-at="2025-07-15T22:54:40 BST" depends-on-methods="com.sudha.ecommerce.tests.SignUpTest.validSignUp" duration-ms="971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithEmptyFields -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:40 BST" name="setUp" finished-at="2025-07-15T22:54:42 BST" duration-ms="1455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginPageTest.verifyLoginWithInCorrectUserNameAndPassword()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:42 BST" name="setUp" finished-at="2025-07-15T22:54:42 BST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithInCorrectUserNameAndPassword()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:42 BST" name="verifyLoginWithInCorrectUserNameAndPassword" description="Verify login with incorrect password" finished-at="2025-07-15T22:54:43 BST" depends-on-methods="com.sudha.ecommerce.tests.SignUpTest.validSignUp" duration-ms="1616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInCorrectUserNameAndPassword -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:44 BST" name="setUp" finished-at="2025-07-15T22:54:45 BST" duration-ms="1936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginPageTest.verifyLoginWithValidCredentials()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:45 BST" name="setUp" finished-at="2025-07-15T22:54:45 BST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithValidCredentials()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:45 BST" name="verifyLoginWithValidCredentials" description="Verify login with valid credentials" finished-at="2025-07-15T22:54:46 BST" depends-on-methods="com.sudha.ecommerce.tests.SignUpTest.validSignUp" duration-ms="982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:54 BST" name="setUp" finished-at="2025-07-15T22:54:55 BST" duration-ms="1545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginPageTest.verifyPasswordFieldIsMasked(java.lang.String,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:55 BST" name="setUp" finished-at="2025-07-15T22:54:55 BST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPasswordFieldIsMasked(java.lang.String,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:55 BST" name="verifyPasswordFieldIsMasked" description="Password Field validation" data-provider="validUserCredentials" finished-at="2025-07-15T22:54:56 BST" depends-on-methods="com.sudha.ecommerce.tests.SignUpTest.validSignUp" duration-ms="868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordFieldIsMasked -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:56 BST" name="setUp" finished-at="2025-07-15T22:54:58 BST" duration-ms="2074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginPageTest.verifyPasswordFieldIsMasked(java.lang.String,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPasswordFieldIsMasked(java.lang.String,java.lang.String)[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:58 BST" name="verifyPasswordFieldIsMasked" description="Password Field validation" data-provider="validUserCredentials" finished-at="2025-07-15T22:54:59 BST" depends-on-methods="com.sudha.ecommerce.tests.SignUpTest.validSignUp" duration-ms="996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demoUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[demoPass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordFieldIsMasked -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:58 BST" name="setUp" finished-at="2025-07-15T22:54:58 BST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sudha.ecommerce.tests.LoginPageTest@3c73951]" started-at="2025-07-15T22:54:59 BST" name="tearDown" finished-at="2025-07-15T22:55:00 BST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sudha.ecommerce.tests.LoginPageTest -->
+    </test> <!-- Chrome Tests -->
+  </suite> <!-- ECommerceSuite -->
+</testng-results>
