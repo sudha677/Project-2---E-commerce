@@ -15,7 +15,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // If using Git:
-                // git url: 'https://github.com/your/repo.git'
+                git url: 'https://github.com/sudha677/Project-2---E-commerce/tree/master.git'
                 // For local Jenkinsfile, this assumes code is already in workspace
                 echo 'Using existing workspace'
             }
