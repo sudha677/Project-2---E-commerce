@@ -10,29 +10,42 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'master', url: 'https://github.com/sudha677/Project-2---E-commerce.git'
-                echo 'Checkout Stage Completed'
+                echo 'Git checkout completed'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running tests via TestNG suite file...'
-                bat 'mvn clean test -DsuiteXmlFile=testng.xml'
+                echo 'Running TestNG suite...'
+                // Avoid breaking pipeline on test failure
+                bat 'mvn clean test -DsuiteXmlFile=testng.xml || exit 0'
             }
         }
+    }
 
-        stage('Publish Reports') {
-            steps {
-                echo 'Publishing TestNG XML results...'
-                junit '**/test-output/testng-results.xml'
+    post {
+        always {
+            echo 'Publishing TestNG XML Results'
+            junit '**/test-output/testng-results.xml'
 
-                echo 'Publishing Extent Report...'
-                publishHTML(target: [
-                    reportDir: 'test-output',
-                    reportFiles: 'ExtentReport.html',
-                    reportName: 'Extent Report'
-                ])
-            }
+            echo 'Publishing Extent Report'
+            publishHTML(target: [
+                reportDir: 'test-output',
+                reportFiles: 'ExtentReport.html',
+                reportName: 'Extent Report'
+            ])
+
+            echo 'Sending email with Extent Report link...'
+            emailext (
+                subject: "Project2 - ECommerce Test Report - ${currentBuild.currentResult}",
+                body: """
+                <p>Build Result: <b>${currentBuild.currentResult}</b></p>
+                <p><a href="${BUILD_URL}">Build Console Output</a></p>
+                <p><a href="${BUILD_URL}Extent_20Report">View Extent Report</a></p>
+                """,
+                mimeType: 'text/html',
+                to: 'automationsudha@gmail.com'
+            )
         }
     }
 }
