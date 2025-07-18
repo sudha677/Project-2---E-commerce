@@ -26,13 +26,16 @@ pipeline {
     post {
         always {
             echo 'Publishing TestNG XML Results'
-            junit '**/test-output/testng-results.xml'
+            junit 'test-output/testng-results.xml'
 
             echo 'Publishing Extent Report'
             publishHTML(target: [
-                reportDir: 'test-output',
-                reportFiles: 'ExtentReport.html',
-                reportName: 'Extent Report'
+            reportDir: 'test-output',
+            reportFiles: 'ExtentReport.html',
+            reportName: 'Extent Report',
+            keepAll: true,
+            alwaysLinkToLastBuild: true,
+            allowMissing: true
             ])
 
             echo 'Sending email with Extent Report link...'
