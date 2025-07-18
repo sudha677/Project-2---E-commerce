@@ -17,7 +17,7 @@ pipeline {
                 // If using Git:
                 git url: 'https://github.com/sudha677/Project-2---E-commerce.git'
                 // For local Jenkinsfile, this assumes code is already in workspace
-                echo 'Using existing workspace'
+                echo 'git Checkout stage Completed'
             }
         }
 
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 dir('ECommerceSystemOriginal') {
                     echo 'Running tests via TestNG suite file...'
-                    sh 'mvn clean test -DsuiteXmlFile=testng.xml'
+                    bat 'mvn clean test -DsuiteXmlFile=testng.xml'
                 }
             }
         }
