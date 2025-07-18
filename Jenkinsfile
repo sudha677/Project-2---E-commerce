@@ -1,47 +1,38 @@
-
 pipeline {
     agent any
 
     tools {
-        maven 'Maven_3.9' // replace with your actual Maven tool name in Jenkins
-        jdk 'JDK_21'      // replace with your actual JDK tool name in Jenkins
-    }
-
-    environment {
-        REPORT_DIR = 'ECommerceSystemOriginal/test-output'
+        maven 'Maven_3.9'
+        jdk 'JDK_21'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                // If using Git:
-                git url: 'https://github.com/sudha677/Project-2---E-commerce.git'
-                // For local Jenkinsfile, this assumes code is already in workspace
-                echo 'git Checkout stage Completed'
+                git branch: 'master', url: 'https://github.com/sudha677/Project-2---E-commerce.git'
+                echo 'Checkout Stage Completed'
             }
         }
 
         stage('Test') {
             steps {
-                dir('ECommerceSystemOriginal') {
-                    echo 'Running tests via TestNG suite file...'
-                    bat 'mvn clean test -DsuiteXmlFile=testng.xml'
-                }
+                echo 'Running tests via TestNG suite file...'
+                bat 'mvn clean test -DsuiteXmlFile=testng.xml'
             }
         }
-    }
 
-    post {
-        always {
-            echo 'Publishing TestNG XML results...'
-            junit '**/testng-results.xml'
+        stage('Publish Reports') {
+            steps {
+                echo 'Publishing TestNG XML results...'
+                junit '**/test-output/testng-results.xml'
 
-            echo 'Publishing Extent Report...'
-            publishHTML(target: [
-                reportDir: "${env.REPORT_DIR}",
-                reportFiles: 'ExtentReport.html',
-                reportName: 'Extent Report'
-            ])
+                echo 'Publishing Extent Report...'
+                publishHTML(target: [
+                    reportDir: 'test-output',
+                    reportFiles: 'ExtentReport.html',
+                    reportName: 'Extent Report'
+                ])
+            }
         }
     }
 }
