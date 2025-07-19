@@ -26,7 +26,7 @@ pipeline {
     post {
         always {
             echo 'Publishing TestNG Results...'
-            junit 'ECommerceSystemOriginal/target/surefire-reports/testng-results.xml'
+            junit 'ECommerceSystemOriginal/test-output/junitreports/TEST-*.xml'
 
             echo 'Publishing Extent Report...'
             publishHTML(target: [
