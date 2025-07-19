@@ -1,0 +1,40 @@
+# Maven build directory
+target/
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Logs and OS-specific files
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Test reports
+test-output/
+*.html
+*.xml
+
+# Selenium screenshots or other output artifacts
+screenshots/
+reports/
+extent-output/
+*.png
+
+# Jenkins workspace (if accidentally added)
+.jenkins/
+
+# Cache
+.cache/

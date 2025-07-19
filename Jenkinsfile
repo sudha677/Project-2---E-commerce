@@ -1,10 +1,9 @@
-
 pipeline {
     agent any
 
     tools {
-        maven 'Maven_3.9' // replace with your actual Maven tool name in Jenkins
-        jdk 'JDK_21'      // replace with your actual JDK tool name in Jenkins
+        maven 'Maven_3.9' // Jenkins tool name for Maven
+        jdk 'JDK_21'      // Jenkins tool name for JDK
     }
 
     environment {
@@ -14,10 +13,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // If using Git:
-                git url: 'https://github.com/sudha677/Project-2---E-commerce/tree/master.git'
-                // For local Jenkinsfile, this assumes code is already in workspace
-                echo 'Using existing workspace'
+                git url: 'https://github.com/sudha677/Project-2---E-commerce.git', branch: 'master'
+                echo 'Code checked out from GitHub repository.'
             }
         }
 
@@ -33,11 +30,14 @@ pipeline {
 
     post {
         always {
-            echo 'Publishing TestNG XML results...'
-            junit '**/testng-results.xml'
+            echo 'Publishing TestNG Results...'
+            junit 'ECommerceSystemOriginal/target/surefire-reports/testng-results.xml'
 
             echo 'Publishing Extent Report...'
             publishHTML(target: [
+                allowMissing: true,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
                 reportDir: "${env.REPORT_DIR}",
                 reportFiles: 'ExtentReport.html',
                 reportName: 'Extent Report'
