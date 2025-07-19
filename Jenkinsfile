@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven_3.9' // Jenkins tool name for Maven
-        jdk 'JDK_21'      // Jenkins tool name for JDK
+        maven 'Maven_3.9'
+        jdk 'JDK_21'
     }
 
     environment {
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 dir('ECommerceSystemOriginal') {
                     echo 'Running tests via TestNG suite file...'
-                    sh 'mvn clean test -DsuiteXmlFile=testng.xml'
+                    bat 'mvn clean test -DsuiteXmlFile=testng.xml'
                 }
             }
         }
