@@ -2,12 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven_3.9'
-        jdk 'JDK_21'
-    }
-
-    environment {
-        REPORT_DIR = 'ECommerceSystemOriginal/test-output'
+        maven 'Maven_3.9.9'
+        jdk 'JDK_21.0.7'
     }
 
     stages {
@@ -20,10 +16,9 @@ pipeline {
 
         stage('Test') {
             steps {
-                dir('ECommerceSystemOriginal') {
-                    echo 'Running tests via TestNG suite file...'
-                    bat 'mvn clean test -DsuiteXmlFile=testng.xml'
-                }
+                echo 'Running tests via TestNG suite file...'
+                // Runs testng.xml inside ECommerceSystemOriginal (Windows-friendly)
+                bat 'mvn clean test -DsuiteXmlFile=ECommerceSystemOriginal/testng.xml'
             }
         }
     }
@@ -38,7 +33,7 @@ pipeline {
                 allowMissing: true,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: "${env.REPORT_DIR}",
+                reportDir: 'ECommerceSystemOriginal/test-output',
                 reportFiles: 'ExtentReport.html',
                 reportName: 'Extent Report'
             ])
