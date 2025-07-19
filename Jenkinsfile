@@ -21,6 +21,13 @@ pipeline {
                 bat 'mvn clean test -DsuiteXmlFile=ECommerceSystemOriginal/testng.xml'
             }
         }
+        
+        stage('Debug Paths') {
+		    steps {
+		        bat 'dir ECommerceSystemOriginal\\test-output\\junitreports'
+		    }
+		}
+
     }
 
     post {
