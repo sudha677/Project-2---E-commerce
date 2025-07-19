@@ -21,20 +21,11 @@ pipeline {
                 bat 'mvn clean test -DsuiteXmlFile=ECommerceSystemOriginal/testng.xml'
             }
         }
-        
-        stage('Debug Paths') {
-		    steps {
-		        bat 'dir ECommerceSystemOriginal\\test-output\\junitreports'
-		    }
-		}
 
     }
 
     post {
         always {
-            echo 'Publishing TestNG Results...'
-            junit 'ECommerceSystemOriginal/test-output/junitreports/TEST-*.xml'
-
             echo 'Publishing Extent Report...'
             publishHTML(target: [
                 allowMissing: true,
