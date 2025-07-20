@@ -23,7 +23,6 @@ out/
 Thumbs.db
 
 # Test reports
-test-output/
 *.html
 *.xml
 
@@ -38,3 +37,9 @@ extent-output/
 
 # Cache
 .cache/
+
+# Ignore everything inside test-output/
+test-output/*
+
+# But do NOT ignore the folder itself
+!test-output/.gitkeep
