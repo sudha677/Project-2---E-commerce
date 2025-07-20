@@ -64,7 +64,9 @@ public class ExtentListener implements ITestListener {
 
 	@Override
 	public void onFinish(ITestContext context) {
-		extent.flush();
+		if (extent != null) {
+			extent.flush();
+		}
 	}
 
 	public boolean isDriverSessionActive(WebDriver driver) {

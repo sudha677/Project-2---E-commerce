@@ -21,6 +21,13 @@ pipeline {
                 bat 'mvn clean test -DsuiteXmlFile=ECommerceSystemOriginal/testng.xml'
             }
         }
+        
+      	stage('Debug Report Generation') {
+        steps {
+            	echo 'Listing all files to locate ExtentReport.html...'
+            	bat 'dir /s /b'
+        	}
+    	}
 
     }
 
