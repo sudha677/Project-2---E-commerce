@@ -38,7 +38,7 @@ pipeline {
                 allowMissing: true,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'ECommerceSystemOriginal/test-output',
+                reportDir: 'test-output',
                 reportFiles: 'ExtentReport.html',
                 reportName: 'Extent Report'
             ])
