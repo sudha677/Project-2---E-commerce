@@ -17,17 +17,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests via TestNG suite file...'
-                // Runs testng.xml inside ECommerceSystemOriginal (Windows-friendly)
                 bat 'mvn clean test -DsuiteXmlFile=ECommerceSystemOriginal/testng.xml'
             }
         }
-        
-      	stage('Debug Report Generation') {
-        steps {
-            	echo 'Listing all files to locate ExtentReport.html...'
-            	bat 'dir /s /b'
-        	}
-    	}
 
     }
 
